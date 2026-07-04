@@ -97,42 +97,69 @@ let customer2 = {
  //let number = 0;
 
 
- function changeheading1(){
-    let input1 = document.getElementById("input1");
-    let input2 = document.getElementById("input2");
-    let sum = parseInt(input1.value) + parseInt(input2.value);
-    let heading = document.getElementById("heading");
-    heading.innerText = sum;
+//  function changeheading1(){
+//     let input1 = document.getElementById("input1");
+//     let input2 = document.getElementById("input2");
+//     let sum = parseInt(input1.value) + parseInt(input2.value);
+//     let heading = document.getElementById("heading");
+//     heading.innerText = sum;
 
-    console.log("Clicked");
- }
- function changeheading2(){
-    let input1 = document.getElementById("input1");
-    let input2 = document.getElementById("input2");
-    let sum = parseInt(input1.value) - parseInt(input2.value);
-    let heading = document.getElementById("heading");
-    heading.innerText = sum;
+//     console.log("Clicked");
+//  }
+//  function changeheading2(){
+//     let input1 = document.getElementById("input1");
+//     let input2 = document.getElementById("input2");
+//     let sum = parseInt(input1.value) - parseInt(input2.value);
+//     let heading = document.getElementById("heading");
+//     heading.innerText = sum;
 
-    console.log("Clicked");
- }
- function changeheading3(){
-    let input1 = document.getElementById("input1");
-    let input2 = document.getElementById("input2");
-    let mult = parseInt(input1.value) * parseInt(input2.value);
-    let heading = document.getElementById("heading");
-    heading.innerText = mult;
+//     console.log("Clicked");
+//  }
+//  function changeheading3(){
+//     let input1 = document.getElementById("input1");
+//     let input2 = document.getElementById("input2");
+//     let mult = parseInt(input1.value) * parseInt(input2.value);
+//     let heading = document.getElementById("heading");
+//     heading.innerText = mult;
 
-    console.log("Clicked");
- }
- function changeheading4(){
-    let input1 = document.getElementById("input1");
-    let input2 = document.getElementById("input2");
-    let div = parseInt(input1.value) / parseInt(input2.value);
-    let heading = document.getElementById("heading");
-    heading.innerText = div;
+//     console.log("Clicked");
+//  }
+//  function changeheading4(){
+//     let input1 = document.getElementById("input1");
+//     let input2 = document.getElementById("input2");
+//     let div = parseInt(input1.value) / parseInt(input2.value);
+//     let heading = document.getElementById("heading");
+//     heading.innerText = div;
 
-    console.log("Clicked");
- }
+//     console.log("Clicked");
+//  }
+//-----------------------------------------------------------------------
+
+// create an array to store customer objects
+let customerList = [];
+
+function btnAddCustomerOnAction(){
+
+    let txtName = document.getElementById("txtName").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtAge = document.getElementById("txtAge").value;
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtSalary = document.getElementById("txtSalary").value;
+
+    //create customer object
+    let customer={
+        name:txtName,
+        address:txtAddress,
+        age:txtAge,
+        email:txtEmail,
+        salary:txtSalary
+    }
+
+    customerList.push(customer);
+
+    console.log(customerList);
+      
+}
  
 
 
