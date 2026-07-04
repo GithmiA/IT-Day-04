@@ -91,18 +91,31 @@ let customer2 = {
 
 //console.log(document.title);
 //document.write("");
- let heading = document.getElementById("heading");
-console.log(heading);
  
- let number = 0;
+//console.log(heading);
+ 
+ //let number = 0;
+
+
  function changeheading1(){
-   heading.innerText = "Githmi"+number++;
-   console.log("Clicked");
+    let input1 = document.getElementById("input1");
+    let input2 = document.getElementById("input2");
+    let sum = parseInt(input1.value) + parseInt(input2.value);
+    let heading = document.getElementById("heading");
+    heading.innerText = sum;
+
+    console.log("Clicked");
  }
  function changeheading2(){
-   heading.innerText = "Githmi"+number--;
-   console.log("Clicked");
+    let input1 = document.getElementById("input1");
+    let input2 = document.getElementById("input2");
+    let sum = parseInt(input1.value) - parseInt(input2.value);
+    let heading = document.getElementById("heading");
+    heading.innerText = sum;
+
+    console.log("Clicked");
  }
+ 
 
 
 
