@@ -115,6 +115,24 @@ let customer2 = {
 
     console.log("Clicked");
  }
+ function changeheading3(){
+    let input1 = document.getElementById("input1");
+    let input2 = document.getElementById("input2");
+    let mult = parseInt(input1.value) * parseInt(input2.value);
+    let heading = document.getElementById("heading");
+    heading.innerText = mult;
+
+    console.log("Clicked");
+ }
+ function changeheading4(){
+    let input1 = document.getElementById("input1");
+    let input2 = document.getElementById("input2");
+    let div = parseInt(input1.value) / parseInt(input2.value);
+    let heading = document.getElementById("heading");
+    heading.innerText = div;
+
+    console.log("Clicked");
+ }
  
 
 
