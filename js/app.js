@@ -136,31 +136,42 @@ let customer2 = {
 //-----------------------------------------------------------------------
 
 // create an array to store customer objects
-let customerList = [];
+// let customerList = [];
 
-function btnAddCustomerOnAction(){
+// function btnAddCustomerOnAction(){
 
-    let txtName = document.getElementById("txtName").value;
-    let txtAddress = document.getElementById("txtAddress").value;
-    let txtAge = document.getElementById("txtAge").value;
-    let txtEmail = document.getElementById("txtEmail").value;
-    let txtSalary = document.getElementById("txtSalary").value;
+//     let txtName = document.getElementById("txtName").value;
+//     let txtAddress = document.getElementById("txtAddress").value;
+//     let txtAge = document.getElementById("txtAge").value;
+//     let txtEmail = document.getElementById("txtEmail").value;
+//     let txtSalary = document.getElementById("txtSalary").value;
 
     //create customer object
-    let customer={
-        name:txtName,
-        address:txtAddress,
-        age:txtAge,
-        email:txtEmail,
-        salary:txtSalary
-    }
+    // let customer={
+    //     name:txtName,
+    //     address:txtAddress,
+    //     age:txtAge,
+    //     email:txtEmail,
+    //     salary:txtSalary
+    // }
 
-    customerList.push(customer);
+    // customerList.push(customer);
 
-    console.log(customerList);
+    // console.log(customerList);
       
-}
- 
+//}
+ function loadTable(){
+     let tblCustomers = document.getElementById("tblCustomers");
 
+     tblCustomers.innerHTML+=`<tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>`
+        console.log(tblCustomers);
+
+ }
 
 
