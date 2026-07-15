@@ -115,8 +115,8 @@ let customer2 = {
 
 //     console.log("Clicked");
 //  }
-//  function changeheading3(){
-//     let input1 = document.getElementById("input1");
+// //  function changeheading3(){
+// //     let input1 = document.getElementById("input1");
 //     let input2 = document.getElementById("input2");
 //     let mult = parseInt(input1.value) * parseInt(input2.value);
 //     let heading = document.getElementById("heading");
@@ -160,18 +160,27 @@ let customer2 = {
     // console.log(customerList);
       
 //}
- function loadTable(){
-     let tblCustomers = document.getElementById("tblCustomers");
+//  function loadTable(){
+//      let tblCustomers = document.getElementById("tblCustomers");
 
-     tblCustomers.innerHTML+=`<tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>`
-        console.log(tblCustomers);
+//      tblCustomers.innerHTML+=`<tr>
+//             <td></td>
+//             <td></td>
+//             <td></td>
+//             <td></td>
+//             <td></td>
+//         </tr>`
+//         console.log(tblCustomers);
 
- }
+//  }
+//document.getElementById("heading").innerText = "Githmi Anuradha";
+
+
+function btnAddCustomerOnAction(){
+    let sum = parseInt(document.getElementById("input1").value) + parseInt(document.getElementById("input2").value);
+    console.log(sum);
+     let output = document.getElementById("output1");
+     output.value = sum;
+}
 
 
